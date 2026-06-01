@@ -11,3 +11,13 @@
 - Fecha cierre: 2026-06-01
 - Aprobado por: Mauricio (Director General)
 - Notas: primer encargo del proyecto
+
+## ENC-002
+- Título: Inicialización Git y Conexión con Repositorio Remoto
+- Fecha inicio: 2026-06-01
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: EN REVISIÓN
+- Evidencia esperada: repo con commits, ramas main y develop, PR abierto
+- Evidencia recibida: pendiente confirmación de Mauricio
+- Fecha cierre: pendiente

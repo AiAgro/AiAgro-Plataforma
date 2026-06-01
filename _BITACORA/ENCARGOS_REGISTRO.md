@@ -17,7 +17,9 @@
 - Fecha inicio: 2026-06-01
 - Emisor: Claude AI (CTO Digital)
 - Responsable: Claude Code
-- Estado: EN REVISIÓN
+- Estado: CERRADO
 - Evidencia esperada: repo con commits, ramas main y develop, PR abierto
-- Evidencia recibida: pendiente confirmación de Mauricio
-- Fecha cierre: pendiente
+- Evidencia recibida: E-01 a E-08 entregadas y aprobadas
+- Fecha cierre: 2026-06-01
+- Aprobado por: Mauricio (Director General)
+- PR mergeado: #1 feature/ENC-002-git-strategy → develop

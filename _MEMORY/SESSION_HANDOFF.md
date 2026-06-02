@@ -5,29 +5,32 @@
 Claude Code
 
 ## Estado al cerrar
-ENC-005 completado técnicamente — pendiente aprobación PR por Mauricio
+ENC-006 completado técnicamente — pendiente aprobación PR por Mauricio
+Con aprobación de este PR: FASE 0 QUEDA FORMALMENTE CERRADA
 
 ## Qué se hizo
-- CHECKLIST_MASTER.md reemplazado con contenido completo (131 líneas)
-- Estado de Fase 0 documentado con evidencia por encargo
-- Gates de Fases 1 y 2 pre-definidos
-- Rama feature/ENC-005-checklist-master creada y pusheada
+- CHANGELOG.md inicializado con historial completo de Fase 0
+- PROJECT_CONTEXT.md actualizado a Fase 0 COMPLETADA
+- Rama feature/ENC-006-changelog-fase0 creada y pusheada
 - PR abierto hacia develop
 
 ## Qué queda pendiente
-- Mauricio aprueba y mergea PR feature/ENC-005-checklist-master → develop
-- Cierre formal de ENC-005
+- Mauricio aprueba y mergea PR feature/ENC-006-changelog-fase0 → develop
+- Cierre formal de ENC-006 = Cierre formal de Fase 0
+- Mauricio autoriza inicio de Fase 1
 
 ## Archivos modificados
-- DOCS/CHECKLIST_MASTER.md (reemplazado con contenido completo)
+- DOCS/CHANGELOG.md (inicializado con historial Fase 0)
+- _MEMORY/PROJECT_CONTEXT.md (Fase 0 COMPLETADA)
 - _MEMORY/ACTIVE_TASK.md
 - _MEMORY/SESSION_HANDOFF.md
 - _BITACORA/BITACORA_GENERAL.md
 - _BITACORA/ENCARGOS_REGISTRO.md
 
 ## Próximo paso recomendado
-ENC-006 — Inicializar CHANGELOG.md y cerrar formalmente Fase 0
-(solo después de que Mauricio apruebe y cierre ENC-005)
+Mauricio autoriza inicio de Fase 1.
+ENC-007 será: Inicializar proyecto Next.js base.
+Solo ejecutar con instrucción explícita de Mauricio.
 
 ## Bloqueos activos
-Ninguno
+Ninguno — en espera de autorización de Fase 1

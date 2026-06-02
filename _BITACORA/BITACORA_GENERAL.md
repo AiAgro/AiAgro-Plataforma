@@ -12,3 +12,4 @@
 2026-06-02 | ENC-004 | Mauricio | CIERRE APROBADO | SECURITY.md mergeado a develop
 2026-06-02 | ENC-005 | Claude Code | CIERRE TÉCNICO | CHECKLIST_MASTER.md completado, PR feature/ENC-005-checklist-master abierto
 2026-06-02 | ENC-005 | Mauricio | CIERRE APROBADO | CHECKLIST_MASTER.md mergeado a develop
+2026-06-02 | ENC-006 | Claude Code | CIERRE TÉCNICO | CHANGELOG.md inicializado, PROJECT_CONTEXT actualizado, PR feature/ENC-006-changelog-fase0 abierto

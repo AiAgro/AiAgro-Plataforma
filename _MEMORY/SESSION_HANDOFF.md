@@ -5,32 +5,24 @@
 Claude Code
 
 ## Estado al cerrar
-ENC-006 completado técnicamente — pendiente aprobación PR por Mauricio
-Con aprobación de este PR: FASE 0 QUEDA FORMALMENTE CERRADA
+ENC-007 completado técnicamente — pendiente aprobación PR por Mauricio
 
 ## Qué se hizo
-- CHANGELOG.md inicializado con historial completo de Fase 0
-- PROJECT_CONTEXT.md actualizado a Fase 0 COMPLETADA
-- Rama feature/ENC-006-changelog-fase0 creada y pusheada
+- ADR-002 creado: stack frontend documentado (Next.js 16, Three.js, Supabase)
+- webapp/ inicializado con Next.js 16 + TypeScript + Tailwind CSS + App Router
+- Dependencias 3D instaladas: three, @react-three/fiber, @react-three/drei
+- Dependencias auth instaladas: @supabase/supabase-js, @supabase/ssr
+- .env.local creado con placeholders (sin valores reales)
+- .gitignore raíz actualizado con exclusiones webapp/
+- Build inicial exitoso (Next.js 16.2.7)
 - PR abierto hacia develop
 
 ## Qué queda pendiente
-- Mauricio aprueba y mergea PR feature/ENC-006-changelog-fase0 → develop
-- Cierre formal de ENC-006 = Cierre formal de Fase 0
-- Mauricio autoriza inicio de Fase 1
-
-## Archivos modificados
-- DOCS/CHANGELOG.md (inicializado con historial Fase 0)
-- _MEMORY/PROJECT_CONTEXT.md (Fase 0 COMPLETADA)
-- _MEMORY/ACTIVE_TASK.md
-- _MEMORY/SESSION_HANDOFF.md
-- _BITACORA/BITACORA_GENERAL.md
-- _BITACORA/ENCARGOS_REGISTRO.md
+- Mauricio aprueba y mergea PR feature/ENC-007-nextjs-init → develop
+- Cierre formal de ENC-007
 
 ## Próximo paso recomendado
-Mauricio autoriza inicio de Fase 1.
-ENC-007 será: Inicializar proyecto Next.js base.
-Solo ejecutar con instrucción explícita de Mauricio.
+ENC-008 — Landing inmersiva: video de fondo, layout y hero 3D
 
 ## Bloqueos activos
-Ninguno — en espera de autorización de Fase 1
+Ninguno

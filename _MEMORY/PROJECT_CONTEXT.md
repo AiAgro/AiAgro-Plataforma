@@ -38,3 +38,10 @@ Regla: nunca datos reales en LOCAL o DEV
 ## Regla para Claude Code
 Leer este archivo al inicio de cada sesión.
 Si Fase 1 no ha sido autorizada, no iniciar desarrollo de código.
+
+## Fase 1 — En progreso
+Inicio: 2026-06-02
+Stack WebApp: Next.js 16, TypeScript, Tailwind CSS
+3D: React Three Fiber + Three.js
+Auth: Supabase Auth
+Ruta webapp: C:\Users\Mauricio\AiAgro\webapp

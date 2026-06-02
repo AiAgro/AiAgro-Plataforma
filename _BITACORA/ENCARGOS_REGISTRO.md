@@ -88,3 +88,13 @@
 - Evidencia esperada: landing funcional, build exitoso, PR abierto
 - Evidencia recibida: pendiente confirmación de Mauricio
 - Fecha cierre: pendiente
+
+## ENC-009
+- Título: Landing 3D Inmersiva — Escena R3F, Partículas y Glow
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital) + agente immersive-web-architect
+- Responsable: Claude Code
+- Estado: EN REVISIÓN
+- Evidencia esperada: escena R3F funcional, build exitoso, PR abierto
+- Evidencia recibida: pendiente confirmación de Mauricio
+- Fecha cierre: pendiente

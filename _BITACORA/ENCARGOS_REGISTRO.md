@@ -23,3 +23,13 @@
 - Fecha cierre: 2026-06-01
 - Aprobado por: Mauricio (Director General)
 - PR mergeado: #1 feature/ENC-002-git-strategy → develop
+
+## ENC-003
+- Título: Completar ARCHITECTURE.md
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: EN REVISIÓN
+- Evidencia esperada: ARCHITECTURE.md completo, PR abierto hacia develop
+- Evidencia recibida: pendiente confirmación de Mauricio
+- Fecha cierre: pendiente

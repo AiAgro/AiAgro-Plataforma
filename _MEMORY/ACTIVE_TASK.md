@@ -1,9 +1,7 @@
 # ACTIVE_TASK — Tarea activa de Claude Code
 
-- **Encargo activo:** ENC-005
-- **Título:** Completar CHECKLIST_MASTER.md
-- **Estado:** EN REVISIÓN — PR pendiente de aprobación de Mauricio
+- **Encargo activo:** ninguno
+- **Último encargo cerrado:** ENC-005
+- **Estado:** esperando instrucción de ENC-006
 - **Responsable:** Claude Code
-- **Inicio:** 2026-06-02
-- **Criterio de cierre:** CHECKLIST_MASTER.md completo, PR abierto y aprobado por Mauricio
 - **Bloqueos:** ninguno

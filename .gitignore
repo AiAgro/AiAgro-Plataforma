@@ -67,3 +67,10 @@ supabase/.temp/
 data/real/
 data/prod/
 uploads/real/
+
+# Next.js webapp
+webapp/.next/
+webapp/out/
+webapp/.env.local
+webapp/.env*.local
+webapp/node_modules/

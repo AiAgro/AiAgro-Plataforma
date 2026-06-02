@@ -1,8 +1,9 @@
 # ACTIVE_TASK — Tarea activa de Claude Code
 
-- **Encargo activo:** ninguno
-- **Último encargo cerrado:** ENC-007
-- **Estado:** esperando instrucción de ENC-008
-- **Fase:** FASE 1 — en progreso
+- **Encargo activo:** ENC-008
+- **Título:** Landing Inmersiva — Video de Fondo, Layout y Hero
+- **Estado:** EN REVISIÓN — PR pendiente de aprobación de Mauricio
 - **Responsable:** Claude Code
+- **Inicio:** 2026-06-02
+- **Fase:** FASE 1
 - **Bloqueos:** ninguno

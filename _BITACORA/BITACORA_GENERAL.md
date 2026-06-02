@@ -16,3 +16,4 @@
 2026-06-02 | ENC-006 | Mauricio | CIERRE APROBADO | CHANGELOG.md mergeado — FASE 0 COMPLETADA FORMALMENTE
 2026-06-02 | ENC-007 | Claude Code | CIERRE TÉCNICO | Next.js inicializado en monorepo, ADR-002 creado, PR abierto
 2026-06-02 | ENC-007 | Mauricio | CIERRE APROBADO | Next.js inicializado, ADR-002 aceptado, mergeado a develop
+2026-06-02 | ENC-008 | Claude Code | CIERRE TÉCNICO | Landing inmersiva creada, build exitoso, PR abierto

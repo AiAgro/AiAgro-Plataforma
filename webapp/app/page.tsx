@@ -1,18 +1,28 @@
 import VideoBackground from '@/components/landing/VideoBackground'
 import Navbar from '@/components/landing/Navbar'
 import HeroSection from '@/components/landing/HeroSection'
+import ParticlesCSS from '@/components/landing/ParticlesCSS'
+import SplineScene from '@/components/landing/SplineScene'
 
 export default function HomePage() {
   return (
     <main className="relative min-h-screen bg-black">
-      {/* Video de fondo — sin src usa gradiente fallback */}
+
+      {/* CAPA 1: Videos con crossfade */}
       <VideoBackground />
 
-      {/* Navbar fija */}
+      {/* CAPA 2: Partículas CSS */}
+      <ParticlesCSS />
+
+      {/* CAPA 3: Escena Spline 3D (decorativa) */}
+      <SplineScene />
+
+      {/* Navbar */}
       <Navbar />
 
-      {/* Hero principal */}
+      {/* Hero content */}
       <HeroSection />
+
     </main>
   )
 }

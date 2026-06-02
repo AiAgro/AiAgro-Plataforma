@@ -18,3 +18,4 @@
 2026-06-02 | ENC-007 | Mauricio | CIERRE APROBADO | Next.js inicializado, ADR-002 aceptado, mergeado a develop
 2026-06-02 | ENC-008 | Claude Code | CIERRE TÉCNICO | Landing inmersiva creada, build exitoso, PR abierto
 2026-06-02 | ENC-009 | immersive-web-architect | CIERRE TÉCNICO | Escena R3F 3D, partículas IoT, glow hero, optimización mobile — build exitoso
+2026-06-02 | ENC-009 | Claude Code | REVISIÓN | Arquitectura reemplazada: 3 capas (video crossfade + CSS particles + Spline) — build exitoso, PR abierto

@@ -34,3 +34,13 @@
 - Evidencia recibida: E-01 a E-05 entregadas y aprobadas
 - Fecha cierre: 2026-06-02
 - Aprobado por: Mauricio (Director General)
+
+## ENC-004
+- Título: Completar SECURITY.md
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: EN REVISIÓN
+- Evidencia esperada: SECURITY.md completo, PR abierto hacia develop
+- Evidencia recibida: pendiente confirmación de Mauricio
+- Fecha cierre: pendiente

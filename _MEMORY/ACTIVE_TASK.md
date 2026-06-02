@@ -1,9 +1,8 @@
 # ACTIVE_TASK — Tarea activa de Claude Code
 
-- **Encargo activo:** ENC-007
-- **Título:** ADR-002 + Inicializar proyecto Next.js en monorepo
-- **Estado:** EN REVISIÓN — PR pendiente de aprobación de Mauricio
+- **Encargo activo:** ninguno
+- **Último encargo cerrado:** ENC-007
+- **Estado:** esperando instrucción de ENC-008
+- **Fase:** FASE 1 — en progreso
 - **Responsable:** Claude Code
-- **Inicio:** 2026-06-02
-- **Fase:** FASE 1
 - **Bloqueos:** ninguno

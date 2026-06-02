@@ -73,7 +73,8 @@
 - Fecha inicio: 2026-06-02
 - Emisor: Claude AI (CTO Digital)
 - Responsable: Claude Code
-- Estado: EN REVISIÓN
+- Estado: CERRADO
 - Evidencia esperada: webapp/ inicializado, build exitoso, ADR-002 creado, PR abierto
-- Evidencia recibida: pendiente confirmación de Mauricio
-- Fecha cierre: pendiente
+- Evidencia recibida: E-01 a E-07 entregadas y aprobadas
+- Fecha cierre: 2026-06-02
+- Aprobado por: Mauricio (Director General)

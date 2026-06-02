@@ -67,3 +67,13 @@
 - Evidencia recibida: E-01 a E-06 entregadas y aprobadas
 - Fecha cierre: 2026-06-02
 - Aprobado por: Mauricio (Director General)
+
+## ENC-007
+- Título: ADR-002 + Inicializar proyecto Next.js en monorepo
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: EN REVISIÓN
+- Evidencia esperada: webapp/ inicializado, build exitoso, ADR-002 creado, PR abierto
+- Evidencia recibida: pendiente confirmación de Mauricio
+- Fecha cierre: pendiente

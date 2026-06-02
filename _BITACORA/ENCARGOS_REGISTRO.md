@@ -11,3 +11,59 @@
 - Fecha cierre: 2026-06-01
 - Aprobado por: Mauricio (Director General)
 - Notas: primer encargo del proyecto
+
+## ENC-002
+- Título: Inicialización Git y Conexión con Repositorio Remoto
+- Fecha inicio: 2026-06-01
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: CERRADO
+- Evidencia esperada: repo con commits, ramas main y develop, PR abierto
+- Evidencia recibida: E-01 a E-08 entregadas y aprobadas
+- Fecha cierre: 2026-06-01
+- Aprobado por: Mauricio (Director General)
+- PR mergeado: #1 feature/ENC-002-git-strategy → develop
+
+## ENC-003
+- Título: Completar ARCHITECTURE.md
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: CERRADO
+- Evidencia esperada: ARCHITECTURE.md completo, PR abierto hacia develop
+- Evidencia recibida: E-01 a E-05 entregadas y aprobadas
+- Fecha cierre: 2026-06-02
+- Aprobado por: Mauricio (Director General)
+
+## ENC-004
+- Título: Completar SECURITY.md
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: CERRADO
+- Evidencia esperada: SECURITY.md completo, PR abierto hacia develop
+- Evidencia recibida: E-01 a E-05 entregadas y aprobadas
+- Fecha cierre: 2026-06-02
+- Aprobado por: Mauricio (Director General)
+
+## ENC-005
+- Título: Completar CHECKLIST_MASTER.md
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: CERRADO
+- Evidencia esperada: CHECKLIST_MASTER.md completo, PR abierto hacia develop
+- Evidencia recibida: E-01 a E-05 entregadas y aprobadas
+- Fecha cierre: 2026-06-02
+- Aprobado por: Mauricio (Director General)
+
+## ENC-006
+- Título: Inicializar CHANGELOG.md y Cierre Formal de Fase 0
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: CERRADO
+- Evidencia esperada: CHANGELOG.md completo, PROJECT_CONTEXT actualizado, PR abierto
+- Evidencia recibida: E-01 a E-06 entregadas y aprobadas
+- Fecha cierre: 2026-06-02
+- Aprobado por: Mauricio (Director General)

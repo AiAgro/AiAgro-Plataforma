@@ -35,10 +35,14 @@ export function isWebGLAvailable(): boolean {
   if (typeof window === 'undefined') return false
   try {
     const canvas = document.createElement('canvas')
-    return !!(
-      window.WebGLRenderingContext &&
-      (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'))
-    )
+    const gl = (canvas.getContext('webgl') ||
+      canvas.getContext('experimental-webgl')) as WebGLRenderingContext | null
+    if (!gl) return false
+    // Release the probe context immediately. Browsers cap simultaneous WebGL
+    // contexts (~16); leaking one here on every mount/HMR can exhaust the pool
+    // and make the real <Canvas> fail to acquire a context (renders black).
+    gl.getExtension('WEBGL_lose_context')?.loseContext()
+    return true
   } catch {
     return false
   }

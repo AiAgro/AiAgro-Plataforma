@@ -50,7 +50,10 @@ export default function Scene3D() {
       dpr={[1, budget.dprMax * dprFactor]}
       camera={{ position: [0, 0, 12], fov: 60 }}
       onPointerMove={handlePointerMove}
-      style={{ position: 'absolute', inset: 0 }}
+      // R3F's Canvas root div must keep its default width/height:100%. Overriding
+      // it with `position:absolute; inset:0` made the ResizeObserver measure 0x0
+      // on first paint (no drawing buffer -> black). Fill the parent explicitly.
+      style={{ width: '100%', height: '100%', display: 'block' }}
     >
       {/* Drop DPR under sustained load; recover when frames are healthy. */}
       <PerformanceMonitor

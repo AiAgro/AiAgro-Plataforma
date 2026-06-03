@@ -78,3 +78,36 @@
 - Evidencia recibida: E-01 a E-07 entregadas y aprobadas
 - Fecha cierre: 2026-06-02
 - Aprobado por: Mauricio (Director General)
+
+## ENC-008
+- Título: Landing Inmersiva — Video de Fondo, Layout y Hero
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: EN REVISIÓN
+- Evidencia esperada: landing funcional, build exitoso, PR abierto
+- Evidencia recibida: pendiente confirmación de Mauricio
+- Fecha cierre: pendiente
+
+## ENC-009
+- Título: Landing 3D Inmersiva — Escena R3F, Partículas y Glow
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital) + agente immersive-web-architect
+- Responsable: Claude Code
+- Estado: BLOQUEADO — R-004 (video hero no visible)
+- Evidencia esperada: escena R3F funcional, build exitoso, PR abierto
+- Evidencia recibida: pendiente confirmación de Mauricio
+- Fecha cierre: pendiente
+
+## ENC-FE-001-HOTFIX
+- Título: Hotfix — hero-1.mp4 visible como fondo fullscreen
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: EN CURSO
+- Rama: feature/ENC-008-landing-hero
+- Notas:
+  - framer-motion ^12.40.0 instalado y disponible
+  - USO DIFERIDO — No incorporar hasta que hero-1.mp4 sea visible y validado visualmente
+  - Uso futuro aprobado: fade-in de contenido, transiciones, aparición de KPIs, cards y hero content
+- Fecha cierre: pendiente

@@ -25,7 +25,7 @@ export default function HomePage() {
   }, [])
 
   return (
-    <main style={{ position: 'relative', minHeight: '100vh', background: 'linear-gradient(135deg, #0a2e0a 0%, #1a5c1a 50%, #0d3d0d 100%)' }}>
+    <main style={{ position: 'relative', minHeight: '100vh', background: 'url(https://res.cloudinary.com/djsmiyodp/video/upload/q_auto/f_auto/so_0/v1780529855/hero-2_uxyq87.jpg) center center / cover no-repeat' }}>
 
       {VIDEOS.map((src, i) => (
         <video

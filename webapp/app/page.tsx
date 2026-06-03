@@ -21,7 +21,11 @@ export default function HomePage() {
   }, [])
 
   return (
-    <main style={{ position: 'relative', minHeight: '100vh', background: '#000' }}>
+    <main style={{
+      position: 'relative',
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #0a2e0a 0%, #1a5c1a 50%, #0d3d0d 100%)',
+    }}>
 
       {VIDEOS.map((src, i) => (
         <video
@@ -30,6 +34,7 @@ export default function HomePage() {
           loop
           muted
           playsInline
+          {...(i === 0 ? { poster: '/poster.svg', preload: 'auto' } : { preload: 'none' })}
           style={{
             position: 'fixed',
             top: 0,

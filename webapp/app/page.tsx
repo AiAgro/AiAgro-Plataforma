@@ -3,7 +3,11 @@
 import { useState, useEffect, useRef } from 'react'
 import TechSidebar from '@/components/landing/TechSidebar'
 
-const VIDEOS = ['/videos/hero-2.mp4', '/videos/hero-3.mp4', '/videos/hero-4.mp4']
+const VIDEOS = [
+  'https://res.cloudinary.com/djsmiyodp/video/upload/q_auto/f_auto/v1780529855/hero-2_uxyq87.mp4',
+  'https://res.cloudinary.com/djsmiyodp/video/upload/q_auto/f_auto/v1780529908/hero-3_cuswny.mp4',
+  'https://res.cloudinary.com/djsmiyodp/video/upload/q_auto/f_auto/v1780529947/hero-4_xiyyy7.mp4',
+]
 const DISPLAY_MS = 10000
 const FADE_MS = 1500
 

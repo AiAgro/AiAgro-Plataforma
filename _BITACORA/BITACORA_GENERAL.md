@@ -16,3 +16,8 @@
 2026-06-02 | ENC-006 | Mauricio | CIERRE APROBADO | CHANGELOG.md mergeado — FASE 0 COMPLETADA FORMALMENTE
 2026-06-02 | ENC-007 | Claude Code | CIERRE TÉCNICO | Next.js inicializado en monorepo, ADR-002 creado, PR abierto
 2026-06-02 | ENC-007 | Mauricio | CIERRE APROBADO | Next.js inicializado, ADR-002 aceptado, mergeado a develop
+2026-06-02 | ENC-008 | Claude Code | CIERRE TÉCNICO | Landing inmersiva creada, build exitoso, PR abierto
+2026-06-02 | ENC-009 | immersive-web-architect | CIERRE TÉCNICO | Escena R3F 3D, partículas IoT, glow hero, optimización mobile — build exitoso
+2026-06-02 | ENC-009 | Claude Code | REVISIÓN | Arquitectura reemplazada: 3 capas (video crossfade + CSS particles + Spline) — build exitoso, PR abierto
+2026-06-02 | ENC-009 | CTO Digital | BLOQUEO ACTIVO | Video hero no visible en landing — R-004 abierto — pendiente resolución
+2026-06-02 | ENC-FE-001-HOTFIX | Mauricio | CERRADO | Video agrícola visible — crossfade hero-2 y hero-3 funcionando — R-004 cerrado

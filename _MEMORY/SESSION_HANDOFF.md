@@ -5,24 +5,24 @@
 Claude Code
 
 ## Estado al cerrar
-ENC-007 completado técnicamente — pendiente aprobación PR por Mauricio
+ENC-008 completado técnicamente — pendiente aprobación PR por Mauricio
 
 ## Qué se hizo
-- ADR-002 creado: stack frontend documentado (Next.js 16, Three.js, Supabase)
-- webapp/ inicializado con Next.js 16 + TypeScript + Tailwind CSS + App Router
-- Dependencias 3D instaladas: three, @react-three/fiber, @react-three/drei
-- Dependencias auth instaladas: @supabase/supabase-js, @supabase/ssr
-- .env.local creado con placeholders (sin valores reales)
-- .gitignore raíz actualizado con exclusiones webapp/
-- Build inicial exitoso (Next.js 16.2.7)
-- PR abierto hacia develop
+- VideoBackground con video fullscreen y fallback gradiente verde agrícola
+- Navbar minimalista fija con logo Aiagro.cl y CTA login
+- HeroSection con badge animado, título, tagline y CTAs
+- Button componente reutilizable (variantes primary/outline/ghost)
+- LoginPage placeholder para ENC-010
+- layout.tsx: metadata Aiagro, lang=es actualizado
+- Build exitoso (Next.js 16.2.7, 3 rutas: /, /login, /_not-found)
 
 ## Qué queda pendiente
-- Mauricio aprueba y mergea PR feature/ENC-007-nextjs-init → develop
-- Cierre formal de ENC-007
+- Mauricio aprueba y mergea PR feature/ENC-008-landing-hero → develop
+- Revisar landing en http://localhost:3000 antes de aprobar (npm run dev en webapp/)
+- Cierre formal de ENC-008
 
 ## Próximo paso recomendado
-ENC-008 — Landing inmersiva: video de fondo, layout y hero 3D
+ENC-009 — Elementos 3D con React Three Fiber
 
 ## Bloqueos activos
 Ninguno

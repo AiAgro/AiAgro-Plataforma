@@ -94,7 +94,20 @@
 - Fecha inicio: 2026-06-02
 - Emisor: Claude AI (CTO Digital) + agente immersive-web-architect
 - Responsable: Claude Code
-- Estado: EN REVISIÓN
+- Estado: BLOQUEADO — R-004 (video hero no visible)
 - Evidencia esperada: escena R3F funcional, build exitoso, PR abierto
 - Evidencia recibida: pendiente confirmación de Mauricio
+- Fecha cierre: pendiente
+
+## ENC-FE-001-HOTFIX
+- Título: Hotfix — hero-1.mp4 visible como fondo fullscreen
+- Fecha inicio: 2026-06-02
+- Emisor: Claude AI (CTO Digital)
+- Responsable: Claude Code
+- Estado: EN CURSO
+- Rama: feature/ENC-008-landing-hero
+- Notas:
+  - framer-motion ^12.40.0 instalado y disponible
+  - USO DIFERIDO — No incorporar hasta que hero-1.mp4 sea visible y validado visualmente
+  - Uso futuro aprobado: fade-in de contenido, transiciones, aparición de KPIs, cards y hero content
 - Fecha cierre: pendiente

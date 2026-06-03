@@ -2,80 +2,63 @@
 
 import { useState, useEffect, useRef } from 'react'
 
-const VIDEOS = [
-  '/videos/hero-1.mp4',
-  '/videos/hero-2.mp4',
-  '/videos/hero-3.mp4',
-]
-
-const DISPLAY_DURATION = 8000
-const FADE_DURATION = 2000
+const VIDEOS = ['/videos/hero-1.mp4', '/videos/hero-2.mp4', '/videos/hero-3.mp4']
+const DISPLAY_MS = 10000
+const FADE_MS = 1500
 
 export default function VideoBackground() {
-  const [current, setCurrent] = useState(0)
-  const [next, setNext] = useState(1)
-  const [fading, setFading] = useState(false)
-  const timerRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined)
+  const [activeIndex, setActiveIndex] = useState(0)
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   useEffect(() => {
-    timerRef.current = setInterval(() => {
-      setFading(true)
-      setTimeout(() => {
-        setCurrent(c => (c + 1) % VIDEOS.length)
-        setNext(n => (n + 1) % VIDEOS.length)
-        setFading(false)
-      }, FADE_DURATION)
-    }, DISPLAY_DURATION)
-
-    return () => clearInterval(timerRef.current)
+    intervalRef.current = setInterval(() => {
+      setActiveIndex(prev => (prev + 1) % VIDEOS.length)
+    }, DISPLAY_MS)
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current)
+    }
   }, [])
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden bg-black">
+    <div
+      style={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: -10,
+        backgroundColor: '#000',
+        overflow: 'hidden',
+      }}
+    >
+      {VIDEOS.map((src, i) => (
+        <video
+          key={src}
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            opacity: i === activeIndex ? 1 : 0,
+            transition: `opacity ${FADE_MS}ms ease-in-out`,
+          }}
+        >
+          <source src={src} type="video/mp4" />
+        </video>
+      ))}
 
-      {/* Video actual */}
-      <video
-        key={current}
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover transition-opacity"
-        style={{
-          opacity: fading ? 0 : 1,
-          transitionDuration: `${FADE_DURATION}ms`,
-        }}
-      >
-        <source src={VIDEOS[current]} type="video/mp4" />
-      </video>
-
-      {/* Video siguiente (precargado) */}
-      <video
-        key={`next-${next}`}
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover transition-opacity"
-        style={{
-          opacity: fading ? 1 : 0,
-          transitionDuration: `${FADE_DURATION}ms`,
-        }}
-      >
-        <source src={VIDEOS[next]} type="video/mp4" />
-      </video>
-
-      {/* Overlay oscuro para legibilidad */}
-      <div className="absolute inset-0 bg-black/50 z-10" />
-
-      {/* Vignette radial */}
+      {/* Un solo overlay — solo para legibilidad del texto */}
       <div
-        className="absolute inset-0 z-10"
         style={{
-          background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.7) 100%)',
+          position: 'absolute',
+          inset: 0,
+          backgroundColor: 'rgba(0,0,0,0.35)',
+          zIndex: 1,
         }}
       />
-
     </div>
   )
 }

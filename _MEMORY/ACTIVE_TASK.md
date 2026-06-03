@@ -1,8 +1,8 @@
 # ACTIVE_TASK — Tarea activa de Claude Code
 
 - **Encargo activo:** ninguno
-- **Fase 0:** COMPLETADA ✅
-- **Último encargo cerrado:** ENC-006
-- **Estado:** en pausa — esperando autorización de Fase 1 por Mauricio
+- **Último encargo cerrado:** ENC-007
+- **Estado:** esperando instrucción de ENC-008
+- **Fase:** FASE 1 — en progreso
 - **Responsable:** Claude Code
 - **Bloqueos:** ninguno

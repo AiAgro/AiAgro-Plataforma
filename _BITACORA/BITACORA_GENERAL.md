@@ -14,3 +14,5 @@
 2026-06-02 | ENC-005 | Mauricio | CIERRE APROBADO | CHECKLIST_MASTER.md mergeado a develop
 2026-06-02 | ENC-006 | Claude Code | CIERRE TÉCNICO | CHANGELOG.md inicializado, PROJECT_CONTEXT actualizado, PR feature/ENC-006-changelog-fase0 abierto
 2026-06-02 | ENC-006 | Mauricio | CIERRE APROBADO | CHANGELOG.md mergeado — FASE 0 COMPLETADA FORMALMENTE
+2026-06-02 | ENC-007 | Claude Code | CIERRE TÉCNICO | Next.js inicializado en monorepo, ADR-002 creado, PR abierto
+2026-06-02 | ENC-007 | Mauricio | CIERRE APROBADO | Next.js inicializado, ADR-002 aceptado, mergeado a develop

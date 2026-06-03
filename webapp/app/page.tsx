@@ -9,13 +9,7 @@ const FADE_MS = 1500
 
 export default function HomePage() {
   const [activeIndex, setActiveIndex] = useState(0)
-  const [mounted, setMounted] = useState(false)
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
-
-  useEffect(() => {
-    const t = setTimeout(() => setMounted(true), 100)
-    return () => clearTimeout(t)
-  }, [])
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
@@ -27,11 +21,7 @@ export default function HomePage() {
   }, [])
 
   return (
-    <main style={{
-      position: 'relative',
-      minHeight: '100vh',
-      background: 'linear-gradient(135deg, #0a2e0a 0%, #1a5c1a 50%, #0d3d0d 100%)',
-    }}>
+    <main style={{ position: 'relative', minHeight: '100vh', background: 'linear-gradient(135deg, #0a2e0a 0%, #1a5c1a 50%, #0d3d0d 100%)' }}>
 
       {VIDEOS.map((src, i) => (
         <video
@@ -49,7 +39,7 @@ export default function HomePage() {
             height: '100%',
             objectFit: 'cover',
             zIndex: 0,
-            opacity: i === activeIndex ? (i === 0 ? (mounted ? 1 : 0) : 1) : 0,
+            opacity: i === activeIndex ? 1 : 0,
             transition: `opacity ${FADE_MS}ms ease-in-out`,
           }}
         >

@@ -2,7 +2,12 @@
 
 import { useState, useEffect, useRef } from 'react'
 
-const VIDEOS = ['/videos/hero-1.mp4', '/videos/hero-2.mp4', '/videos/hero-3.mp4']
+const VIDEOS = [
+  'https://res.cloudinary.com/djsmiyodp/video/upload/q_auto/f_auto/v1780782341/hero-8_tjozyo.mp4',
+  'https://res.cloudinary.com/djsmiyodp/video/upload/q_auto/f_auto/v1780782370/hero-9_nz0spz.mp4',
+  'https://res.cloudinary.com/djsmiyodp/video/upload/q_auto/f_auto/v1780782379/hero-10_hq3ukw.mp4',
+  'https://res.cloudinary.com/djsmiyodp/video/upload/q_auto/f_auto/v1780782387/hero-11_g5s9wi.mp4',
+]
 const DISPLAY_MS = 10000
 const FADE_MS = 1500
 

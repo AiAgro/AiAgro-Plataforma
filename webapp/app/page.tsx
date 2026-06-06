@@ -3,28 +3,15 @@ import TechSidebar from '@/components/landing/TechSidebar'
 
 export default function HomePage() {
   return (
-    <main style={{ position: 'relative', minHeight: '100vh' }}>
+    <main className="relative min-h-screen">
 
       <VideoBackground />
 
-      <div style={{
-        position: 'relative',
-        zIndex: 2,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
-        minHeight: '100vh',
-        color: 'white',
-        textAlign: 'left',
-        padding: '0 24px',
-        paddingTop: '80px',
-        paddingLeft: '48px',
-      }}>
-        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '4px', letterSpacing: '-0.02em' }}>
+      <div className="relative z-[2] flex flex-col items-start justify-start min-h-screen text-white px-6 pt-[64px] md:px-12 md:pt-[80px]">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 tracking-tight">
           Aiagro.cl
         </h1>
-        <p style={{ fontSize: '1rem', opacity: 0.8 }}>
+        <p className="text-sm md:text-base opacity-80">
           Inteligencia agrícola para decisiones que importan
         </p>
       </div>

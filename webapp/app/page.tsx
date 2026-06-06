@@ -13,12 +13,12 @@ export default function HomePage() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
-        justifyContent: 'flex-end',
+        justifyContent: 'flex-start',
         minHeight: '100vh',
         color: 'white',
         textAlign: 'left',
         padding: '0 24px',
-        paddingBottom: '80px',
+        paddingTop: '80px',
         paddingLeft: '48px',
       }}>
         <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '24px', letterSpacing: '-0.02em' }}>

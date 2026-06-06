@@ -21,7 +21,7 @@ export default function HomePage() {
         paddingTop: '80px',
         paddingLeft: '48px',
       }}>
-        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '24px', letterSpacing: '-0.02em' }}>
+        <h1 style={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '4px', letterSpacing: '-0.02em' }}>
           Aiagro.cl
         </h1>
         <p style={{ fontSize: '1rem', opacity: 0.8 }}>

@@ -29,6 +29,8 @@ export default function VideoBackground() {
       style={{
         position: 'fixed',
         inset: 0,
+        width: '100vw',
+        height: '100vh',
         zIndex: -10,
         backgroundColor: '#000',
         overflow: 'hidden',
@@ -44,8 +46,8 @@ export default function VideoBackground() {
           style={{
             position: 'absolute',
             inset: 0,
-            width: '100%',
-            height: '100%',
+            width: '100vw',
+            height: '100vh',
             objectFit: 'cover',
             opacity: i === activeIndex ? 1 : 0,
             transition: `opacity ${FADE_MS}ms ease-in-out`,

@@ -38,11 +38,11 @@ Este documento NO certifica cierre de Fase 1. Certifica el estado actual con bas
 |---|---|---|---|
 | 1 | Landing premium | ✅ Cumplido | Captura 1 |
 | 2 | Hero tecnológico | ✅ Cumplido | Captura 1 |
-| 3 | Videos optimizados | ❌ No cumplido | Reportado: videos no responsivos en móvil |
+| 3 | Videos optimizados | ✅ Cumplido | Responsive de video resuelto (375px/414px) — BR-03 / ENC-FE-002 |
 | 4 | Menú principal | ⚠️ Parcial | Existe (4 íconos), pero enfoque tecnológico, no de decisión (ver sección 5) |
-| 5 | Login cerrado | ❌ No cumplido | Reportado: no existe |
-| 6 | Aviso de contrato obligatorio | ❌ No cumplido | Reportado: no existe |
-| 7 | Responsive (general) | ⚠️ Parcial | Al menos videos fallan en móvil; resto no verificado |
+| 5 | Login cerrado | ✅ Cumplido | Resuelto — Email OTP de 2 pasos (ENC-FE-002, ADR-003) |
+| 6 | Aviso de contrato obligatorio | ✅ Cumplido | Resuelto — modal bloqueante + tabla `contract_acceptances` (ENC-FE-002) |
+| 7 | Responsive (general) | ⚠️ Parcial | BR-03 (video, 375px/414px) resuelto — ENC-FE-002; resto de la landing no auditado |
 
 ---
 
@@ -53,11 +53,11 @@ Según Master Plan, Fase 1 requiere:
 | Criterio | Cumplido | Comentario |
 |---|---|---|
 | UX aprobada | ⚠️ Pendiente | No hay registro de aprobación formal de UX |
-| Login operativo | ❌ No | Confirmado ausente |
+| Login operativo | ✅ Sí | Email OTP de 2 pasos operativo — ENC-FE-002, ADR-003 |
 | Sin registro público | ✅ Sí | No se observa formulario de registro |
 | Build exitoso | ✅ Asumido | Sitio está en producción y accesible |
 
-**Conclusión: Fase 1 NO cumple sus propios criterios de aceptación. Permanece ABIERTA.**
+**Conclusión: Fase 1 NO cumple aún sus propios criterios de aceptación — el único criterio pendiente es la aprobación formal de UX (ver Sección 5). Permanece ABIERTA.**
 
 ---
 
@@ -98,13 +98,13 @@ Esto define el modelo de acceso para Fase 1 y para ENC-FE-003:
 
 ## 7. Brechas Abiertas (Registro Consolidado)
 
-| ID Brecha | Descripción | Bloquea a |
-|---|---|---|
-| BR-01 | No existe login cerrado | ENC-FE-003 (modal de acceso depende de sistema de login base) |
-| BR-02 | No existe aviso de contrato obligatorio | Cierre de Fase 1 |
-| BR-03 | Videos no responsivos en móvil | Cierre de Fase 1 / UX aprobada |
-| BR-04 | Sin ADR-001 ni checklist maestro formal (Fase 0) | Cierre retroactivo de Fase 0 |
-| BR-05 | Narrativa actual (4 íconos) orientada a tecnología, no a decisión | Posicionamiento estratégico — mitigado parcialmente por ENC-FE-003 |
+| ID Brecha | Descripción | Bloquea a | Estado |
+|---|---|---|---|
+| BR-01 | No existe login cerrado | ENC-FE-003 (modal de acceso depende de sistema de login base) | ✅ RESUELTO — ENC-FE-002 / ADR-003 |
+| BR-02 | No existe aviso de contrato obligatorio | Cierre de Fase 1 | ✅ RESUELTO — ENC-FE-002 |
+| BR-03 | Videos no responsivos en móvil | Cierre de Fase 1 / UX aprobada | ✅ RESUELTO — ENC-FE-002 |
+| BR-04 | Sin ADR-001 ni checklist maestro formal (Fase 0) | Cierre retroactivo de Fase 0 | Abierto |
+| BR-05 | Narrativa actual (4 íconos) orientada a tecnología, no a decisión | Posicionamiento estratégico — mitigado parcialmente por ENC-FE-003 | Abierto |
 
 ---
 
@@ -112,16 +112,17 @@ Esto define el modelo de acceso para Fase 1 y para ENC-FE-003:
 
 | ID | Nombre | Estado | Relación |
 |---|---|---|---|
-| ENC-FE-003 | Centro Aiagro Comercial Interactivo | Definido, NO ejecutado | Depende de BR-01 (login) |
-| ENC-FE-002 | (Propuesto) Cierre técnico Fase 1: Login + Contrato + Responsive | Pendiente de definición formal | Resuelve BR-01, BR-02, BR-03 |
+| ENC-FE-003 | Centro Aiagro Comercial Interactivo | Definido, NO ejecutado | Prerrequisito BR-01 (login) ya resuelto por ENC-FE-002 |
+| ENC-FE-002 | Cierre técnico Fase 1: Login + Contrato + Responsive | Ejecutado — ver PR de ENC-FE-002 | Resuelve BR-01, BR-02, BR-03 |
 
 ---
 
 ## 9. Próximo Paso Recomendado
 
-1. Formalizar **ENC-FE-002** (login cerrado + aviso de contrato + responsive de video) como encargo de Fase 1, dominio Frontend/Backend (Auth) + Documentación.
-2. Una vez definido ENC-FE-002, secuenciar: **ENC-FE-002 → ENC-FE-003** (el login es prerrequisito técnico del modal de acceso del Centro Aiagro).
-3. Evaluar cierre retroactivo de Fase 0 (BR-04) en paralelo, sin bloquear lo anterior.
+1. **ENC-FE-002** fue ejecutado (login Email OTP, aviso de contrato y responsive de video — ver PR de ENC-FE-002); su prerrequisito técnico para ENC-FE-003 (BR-01/login) queda resuelto.
+2. Avanzar con **ENC-FE-003** (Centro Aiagro Comercial Interactivo), ya habilitado por la resolución de BR-01.
+3. Obtener la aprobación formal de UX (Sección 4/5) — único criterio de aceptación de Fase 1 aún pendiente.
+4. Evaluar cierre retroactivo de Fase 0 (BR-04) en paralelo, sin bloquear lo anterior.
 
 ---
 

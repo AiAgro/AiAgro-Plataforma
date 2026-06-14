@@ -106,7 +106,7 @@ Esto define el modelo de acceso para Fase 1 y para ENC-FE-003:
 | BR-04 | Sin ADR-001 ni checklist maestro formal (Fase 0) | Cierre retroactivo de Fase 0 | Abierto |
 | BR-05 | Narrativa actual (4 íconos) orientada a tecnología, no a decisión | Posicionamiento estratégico — mitigado parcialmente por ENC-FE-003 | Abierto |
 | BR-08 | Documentación de gobierno 01-05_AIAGRO_*.md no versionada en repositorio | Trazabilidad / gobierno (cierre retroactivo) | Abierto — ver DOCS/INCIDENTS_REGISTRY.md |
-| BR-09 | SMTP Resend + dominio aiagro.cl implementado sin ADR formal previo | Trazabilidad arquitectónica (ADR-004 retroactivo) | Abierto — ver DOCS/INCIDENTS_REGISTRY.md |
+| BR-09 | SMTP Resend + dominio aiagro.cl implementado sin ADR formal previo | Trazabilidad arquitectónica (ADR-004 retroactivo) | ✅ Cerrado — Formalizado mediante ADR/ADR-004-smtp-resend-dominio-aiagro.md |
 
 ---
 

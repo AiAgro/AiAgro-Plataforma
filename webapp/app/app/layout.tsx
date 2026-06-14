@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import ContractGate, { CONTRACT_VERSION } from '@/components/auth/ContractGate'
+import ContractGate from '@/components/auth/ContractGate'
 
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient()
@@ -14,7 +14,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
     .from('contract_acceptances')
     .select('id')
     .eq('user_id', user.id)
-    .eq('contract_version', CONTRACT_VERSION)
+    .eq('contract_version', 'v1-placeholder')
     .maybeSingle()
 
   return (

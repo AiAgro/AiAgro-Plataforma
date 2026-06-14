@@ -105,7 +105,7 @@ Esto define el modelo de acceso para Fase 1 y para ENC-FE-003:
 | BR-03 | Videos no responsivos en móvil | Cierre de Fase 1 / UX aprobada | ✅ VALIDADO E2E EN DEV — QA-CERT-ENC-FE-002 (ver DOCS/ENC-FE-002-evidencia-dev.md) |
 | BR-04 | Sin ADR-001 ni checklist maestro formal (Fase 0) | Cierre retroactivo de Fase 0 | Abierto |
 | BR-05 | Narrativa actual (4 íconos) orientada a tecnología, no a decisión | Posicionamiento estratégico — mitigado parcialmente por ENC-FE-003 | Abierto |
-| BR-08 | Documentación de gobierno 01-05_AIAGRO_*.md no versionada en repositorio | Trazabilidad / gobierno (cierre retroactivo) | Abierto — ver DOCS/INCIDENTS_REGISTRY.md |
+| BR-08 | Documentación de gobierno 01-05_AIAGRO_*.md no versionada en repositorio | Trazabilidad / gobierno (cierre retroactivo) | ✅ Cerrado — documentos versionados en DOCS/governance/ ([01](governance/01_AIAGRO_PROJECT_CHARTER.md), [02](governance/02_MASTER_DEVELOPMENT_PLAN.md), [03](governance/03_AIAGRO_GOVERNANCE.md), [04](governance/04_AIAGRO_ARCHITECTURE_PRINCIPLES.md), [05](governance/05_AIAGRO_AGENTS_AND_SKILLS.md)) |
 | BR-09 | SMTP Resend + dominio aiagro.cl implementado sin ADR formal previo | Trazabilidad arquitectónica (ADR-004 retroactivo) | ✅ Cerrado — Formalizado mediante ADR/ADR-004-smtp-resend-dominio-aiagro.md |
 
 ---

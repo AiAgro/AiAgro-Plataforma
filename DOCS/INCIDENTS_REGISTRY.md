@@ -58,7 +58,7 @@
 
 ### BR-08
 
-- **Estado:** Abierto
+- **Estado:** Cerrado en commit `b229018` — ver `DOCS/governance/` y `ESTADO_FASE_1.md`
 - **Descripción:** Documentación de gobierno `01-05_AIAGRO_*.md` no versionada en repositorio.
 - **Acción futura:** Versionar en `DOCS/governance/`.
 - **Severidad:** Media-Alta

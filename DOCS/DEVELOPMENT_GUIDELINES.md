@@ -56,3 +56,7 @@ https://github.com/AiAgro/AiAgro-Plataforma.git
 ### Regla absoluta de seguridad
 Ningún secreto, credencial, token ni .env real
 puede existir en ningún commit de ninguna rama.
+
+## Auditorías de Seguridad
+
+Toda auditoría de seguridad CISO debe seguir el Marco de Evidencia para Auditorías de Seguridad definido en `SECURITY.md` bajo GOV-SEC-001. Las conclusiones deben estar basadas en evidencia verificable, distinguir fuentes internas y externas, y registrar explícitamente los casos no verificables.

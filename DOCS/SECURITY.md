@@ -173,6 +173,88 @@ obligatorio en todos los ambientes y por todos los agentes.
 
 ---
 
+El principio "la ausencia de evidencia no equivale a cumplimiento" es
+transversal y no exclusivo de auditorías CISO: aplica también a
+certificaciones QA, revisiones arquitectónicas, revisiones CTO, gates de
+producción, y revisiones de Agentes/Skills cuando corresponda.
+
+## Marco de Evidencia para Auditorías de Seguridad (GOV-SEC-001)
+
+### Clasificación de Fuente de Evidencia
+
+- Interna: verificable mediante repositorio, código fuente, migraciones,
+  historial git, documentación disponible.
+- Externa: depende de Cloudflare Dashboard, Supabase Dashboard,
+  configuración SaaS, configuración DNS, consolas administrativas,
+  evidencia aportada por el usuario.
+
+### Evidencia Obtenida - Requisitos
+
+No se aceptan conclusiones tipo "parece correcto", "no se observan
+problemas", "probablemente".
+
+Toda conclusión debe indicar:
+
+- Qué se revisó.
+- Dónde se revisó.
+- Qué se observó.
+
+Ejemplo válido:
+
+> Se observó política SELECT utilizando `auth.uid() = user_id` en archivo
+> `webapp/supabase/migrations/0001_contract_acceptances.sql`.
+
+### Estados de Verificabilidad
+
+| Estado | Significado |
+|---|---|
+| Verificado | Evidencia observada directamente |
+| Parcialmente Verificado | Evidencia incompleta |
+| No Verificable | No existe acceso suficiente |
+| Pendiente Evidencia Externa | Requiere respaldo del usuario |
+| No Aplica | Punto fuera de alcance |
+
+### Estado "NO VERIFICABLE EN ESTA AUDITORÍA"
+
+Cuando una fuente externa no pueda inspeccionarse durante la auditoría,
+registrar obligatoriamente este estado.
+
+Reglas:
+
+- No asumir cumplimiento.
+- No asumir incumplimiento.
+- No generar falso positivo ni falso negativo.
+- Solicitar evidencia externa cuando corresponda.
+
+### Clasificación de Severidad
+
+- Crítico: exposición de secretos, service role expuesto, escalación de
+  privilegios, bypass de autenticación, bypass de RLS.
+- Alto: acceso indebido a datos, aislamiento insuficiente entre clientes,
+  exposición parcial de información sensible.
+- Medio: configuración incorrecta, debilidad de control, riesgo potencial
+  sin explotación conocida.
+- Bajo: mejora recomendada, endurecimiento adicional.
+- Informativo: registro documental, observación sin impacto de seguridad.
+
+### Reglas de Decisión GO / GO CON CONDICIONES / NO-GO
+
+- NO-GO: existe 1+ hallazgo Crítico, o 2+ puntos NO VERIFICABLE en
+  Secretos/Credenciales/RLS/Control de acceso.
+- GO CON CONDICIONES: existen hallazgos Alto o Medio, no existe hallazgo
+  Crítico, existe responsable asignado y plan de remediación.
+- GO: no existen hallazgos Crítico ni Alto, los NO VERIFICABLE
+  corresponden sólo a áreas no bloqueantes, no hay evidencia de exposición
+  de secretos ni riesgos de acceso.
+
+### Lección Aprendida
+
+> Una auditoría no valida que algo sea correcto. Una auditoría valida
+> únicamente aquello que puede demostrarse mediante evidencia suficiente y
+> verificable. La ausencia de evidencia no equivale a cumplimiento.
+
+---
+
 ## Referencias
 
 - DOCS/DATA_CLASSIFICATION.md

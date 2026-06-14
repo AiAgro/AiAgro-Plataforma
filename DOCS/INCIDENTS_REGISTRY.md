@@ -52,6 +52,19 @@
 - **Referencia técnica:** ENC-FE-002, ADR-003, `webapp/app/app/layout.tsx:3,17`
 - **Commit asociado:** `78a11fe`
 
+### GOV-PROCESS-001
+
+- **Tipo:** Incidente de Proceso (no técnico)
+- **Severidad:** Media
+- **Fecha:** 2026-06-13
+- **Emisor:** Director Orquestador (Dominio 00)
+- **Responsable primario:** CTO
+- **Estado:** Cerrado en este commit.
+- **Descripción:** La definición de alcance de "CISO Audit Pre-ENC-FE-003" emitida por CTO no incluía evidencia mínima por punto, tratamiento de evidencia externa como Cloudflare Dashboard o Supabase Dashboard, estado "No verificable", ni criterios objetivos para GO / GO CON CONDICIONES / NO-GO.
+- **Riesgo:** Auditorías aparentemente completas pero con conclusiones basadas en supuestos, falsos positivos de cumplimiento y debilitamiento de Security Gates.
+- **Causa raíz:** Solicitud de auditoría construida desde perspectiva funcional, sin incorporar principios CISO de "evidencia antes de aprobación" y "clasificación de verificabilidad".
+- **Resolución:** Marco de Evidencia GOV-SEC-001 incorporado a `SECURITY.md` y `DEVELOPMENT_GUIDELINES.md` en este PR. Aplicado de forma pragmática a la auditoría `CISO_AUDIT_PRE_ENCFE003` en curso, sin reiniciarla. La mejora no invalida auditorías históricas; establece un estándar obligatorio para auditorías futuras.
+
 ---
 
 ## Brechas (BR)

@@ -65,7 +65,7 @@
 
 ### BR-09
 
-- **Estado:** Abierto
+- **Estado:** Cerrado — Formalizado mediante `ADR/ADR-004-smtp-resend-dominio-aiagro.md`
 - **Descripción:** SMTP Resend + dominio `aiagro.cl` implementado sin ADR formal previo.
 - **Acción futura:** ADR-004 retroactivo (no ejecutar — solo registrar).
 - **Severidad:** Media
